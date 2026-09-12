@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Snack Shack — Lunch just got better</title>
+  <title>The Snack Shack — Menu</title>
   <meta name="description" content="Pick your snacks, check your total, and show your order at the Snack Shack.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23ff5735'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-family='Arial' font-weight='900' font-size='28' fill='white'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
@@ -16,15 +16,15 @@
   </div></header>
   <main id="top">
     <section class="menu-section" id="menu" aria-labelledby="menu-title">
-      <div class="menu-heading"><div><p class="eyebrow">YOUR LUNCH BREAK, UPGRADED</p><h1 id="menu-title">Big break.<br class="mobile-break"> Little treats<span>.</span></h1><p class="intro">Pick your favorites. We’ll see you at the shack.</p></div><div class="round-stamp" aria-hidden="true"><span>GOOD SNACKS</span><strong>☺</strong><span>GOOD MOOD</span></div></div>
-      <div class="menu-bar"><h2>The snack lineup <span>6 picks</span></h2><span class="sample-label">Sample menu & prices</span></div>
+      <div class="menu-heading"><h1 id="menu-title">Hi, hungry? <span>☺</span></h1><p class="intro">Grab a little something.</p></div>
+      <div class="menu-bar"><h2>Our snacks</h2><span class="sample-label">Sample menu & prices</span></div>
       <div class="snack-grid" id="snack-grid"></div>
       <noscript><p>Enable JavaScript to build an order. Sample menu: Chocolate chip cookie $1.50; Classic potato chips $1.00; Fudge brownie $2.00; Mini pretzels $1.00; Fruit gummies $1.00; Juice box $1.00.</p></noscript>
-      <p class="menu-note">A little heads-up: selection may vary. Check packaging for ingredients and allergens.</p>
+      <p class="menu-note">Allergies? Check the packaging before you eat.</p>
     </section>
-    <section class="pickup-section" id="pickup" aria-labelledby="pickup-title"><div class="pickup-heading"><p class="eyebrow">FROM SCREEN TO SNACK</p><h2 id="pickup-title">Snack time,<br> made simple.</h2><p>Build your order here.<br> Finish it in person.</p></div><div class="steps"><article><span class="step-number">01</span><div><h3>Pick your snacks</h3><p>Tap Add on anything that looks good. Review your picks and total in Your order.</p></div></article><article><span class="step-number">02</span><div><h3>Meet us at lunch</h3><p>Pickup spot and exact times are coming soon. Check with the club before heading over.</p></div></article><article><span class="step-number">03</span><div><h3>Show your order</h3><p>Show your list to the club to confirm availability and payment. Nothing is sent or reserved online.</p></div></article></div></section>
+    <section class="pickup-section" id="pickup" aria-labelledby="pickup-title"><h2 id="pickup-title">See you at lunch ☺</h2><div class="pickup-facts"><p><strong>When & where</strong>Ask the club for the pickup spot and time.</p><p><strong>At pickup</strong>Show your list and pay in person.</p></div><p class="pickup-note">Your list isn’t sent ahead. Snacks aren’t reserved.</p></section>
   </main>
-  <footer><a class="footer-brand" href="#top">the snack shack.</a><p>Good snacks. Better lunch breaks.</p><a href="#menu">Back to the menu ↑</a></footer>
-  <dialog id="order-dialog" aria-labelledby="order-title"><div class="dialog-head"><div><p class="eyebrow">YOUR LUNCH BREAK HAUL</p><h2 id="order-title">Your order<span>.</span></h2></div><button class="icon-button" id="close-order" aria-label="Close order">×</button></div><div id="order-items"></div><div class="order-total"><span>Total</span><strong id="order-total">$0.00</strong></div><p class="order-disclaimer">Sample prices. This list stays on this page; it isn’t sent to the club or reserved.</p><button class="primary-button" id="show-pickup">Show at pickup</button><div id="pickup-message" hidden><h3>Show this list to the club</h3><p>Confirm availability and payment in person. Ask the club for the pickup location and time.</p></div><button class="text-button" id="keep-browsing">Keep picking snacks</button></dialog>
+  <footer><a class="footer-brand" href="#top">the snack shack.</a><a href="#menu">Back to the menu ↑</a></footer>
+  <dialog id="order-dialog" aria-labelledby="order-title"><div class="dialog-head"><div><h2 id="order-title">Your order<span>.</span></h2></div><button class="icon-button" id="close-order" aria-label="Close order">×</button></div><div id="order-items"></div><div class="order-total"><span>Total</span><strong id="order-total">$0.00</strong></div><p class="order-disclaimer">Sample prices. Show this list in person; nothing is reserved.</p><button class="primary-button" id="show-pickup">Show at pickup</button><div id="pickup-message" hidden><h3>Show this list to the club</h3><p>Check availability and pay in person.</p></div><button class="text-button" id="keep-browsing">Keep picking snacks</button></dialog>
   <div class="sr-only" id="status" role="status" aria-live="polite"></div>
 </body></html>
