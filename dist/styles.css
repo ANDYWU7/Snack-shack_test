@@ -3,3 +3,8 @@
 /* Keep prices aligned and longer snack names comfortable in the new type. */
 .price,.order-total,.quantity{font-variant-numeric:tabular-nums}
 .card-content h3{overflow-wrap:break-word}
+
+/* The supplied hero sits directly on the page, without a frame. */
+.menu-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);align-items:center;gap:24px}
+.hero-graphic{display:block;width:100%;height:auto;border:0;border-radius:0;box-shadow:none;background:none}
+@media(max-width:560px){.menu-heading{grid-template-columns:minmax(0,1fr) minmax(0,42%);gap:12px}.menu-heading h1{font-size:32px}}
