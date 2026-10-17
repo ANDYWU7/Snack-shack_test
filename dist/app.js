@@ -1,14 +1,13 @@
 const snacks = [
-  {id:'cookie',name:'Chocolate chip cookie',price:150,emoji:'🍪'},
-  {id:'chips',name:'Classic potato chips',price:100,emoji:'🥔'},
-  {id:'brownie',name:'Fudge brownie',price:200,emoji:'🍫'},
-  {id:'pretzels',name:'Mini pretzels',price:100,emoji:'🥨'},
-  {id:'gummies',name:'Fruit gummies',price:100,emoji:'🍓'},
-  {id:'juice',name:'Juice box',price:100,emoji:'🧃'}
+  {id:'trolli',name:'Trolli gummies',price:100,image:'trolli.png'},
+  {id:'takis',name:'Takis',price:100,image:'takis.png'},
+  {id:'sour-patch-kids',name:'Sour Patch Kids',price:150,image:'sour_patch_kids.png'},
+  {id:'skittles',name:'Skittles',price:100,image:'skittles.png'},
+  {id:'reeses',name:'Reese’s',price:150,image:'reeses.png'},
+  {id:'kitkat',name:'KitKat',price:150,image:'kitkat.png'},
+  {id:'hot-cheeto',name:'Hot Cheetos',price:100,image:'hot_cheeto.png'},
+  {id:'doritos',name:'Doritos',price:100,image:'doritos.png'}
 ];
-snacks[0].image='https://images.unsplash.com/photo-1719384980808-0f3b833a2468?auto=format&fit=crop&w=900&q=85';
-snacks[1].image='https://images.unsplash.com/photo-1641693148759-843d17ceac24?auto=format&fit=crop&w=900&q=85';
-snacks[2].image='https://images.unsplash.com/photo-1688279432554-16cd6de375ac?auto=format&fit=crop&w=900&q=85';
 const cart = new Map();
 const money = cents => '$' + (cents / 100).toFixed(2);
 const grid = document.querySelector('#snack-grid');

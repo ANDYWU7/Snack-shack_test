@@ -8,3 +8,4 @@
 .menu-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);align-items:center;gap:24px}
 .hero-graphic{display:block;width:100%;height:auto;border:0;border-radius:0;box-shadow:none;background:none}
 @media(max-width:560px){.menu-heading{grid-template-columns:minmax(0,1fr) minmax(0,42%);gap:12px}.menu-heading h1{font-size:32px}}
+.snack-image img{object-fit:contain;padding:12px}
